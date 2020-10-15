@@ -1,0 +1,2 @@
+# aws --profile ec2usr ec2 describe-instances --filters "Name=instance-type,Values=t2.micro" --query "Reservations[].Instances[].InstanceId"
+aws --profile ec2usr cloudformation create-stack --stack-name myWPstack --template-body file://template1.yml
